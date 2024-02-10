@@ -1,0 +1,67 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .todo-section {
+    width: 60%;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  .todo-section {
+    width: 70%;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  .add-form {
+    grid-template-columns: 1.5fr 1.5fr;
+    row-gap: 3.4rem;
+  }
+
+  .btn {
+    grid-column: 1/-1;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .todo-section {
+    width: 80%;
+  }
+
+  .add-form {
+    grid-template-columns: 1fr;
+    row-gap: 3.4rem;
+  }
+
+  .list-item {
+    width: 80%;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .list-item {
+    flex-direction: column;
+    gap: 3.4rem;
+    text-align: center;
+  }
+}

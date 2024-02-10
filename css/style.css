@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+  background: rgba(176, 114, 137, 1);
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 4rem auto;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  /* color: #45260a; */
+  /* color: #343a40; */
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 5.6rem;
+  text-align: center;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.2rem;
+  border-radius: 9px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+
+  background-color: rgba(229, 49, 112, 1);
+  color: #fff;
+
+  align-self: end;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgb(151, 11, 60);
+}
+
+.todo-section {
+  background: rgba(255, 255, 254, 1);
+  box-shadow: 0px 4.6777777671813965px 4.6777777671813965px 0px
+    rgba(255, 255, 255, 1);
+  width: 50%;
+
+  border-radius: 2.4rem;
+  padding: 2.4rem 4.8rem;
+}
+
+.add-form {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+  column-gap: 3.4rem;
+}
+
+.add-form input,
+.add-form select {
+  outline: none;
+  border: 2px solid rgba(229, 49, 112, 1);
+  border-radius: 10px;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+}
+
+.title {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  margin: 4.8rem auto;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 60%;
+
+  box-shadow: 0px 0px 9.355555534362793px 0px rgba(229, 229, 229, 1);
+  padding: 2.4rem;
+  border-radius: 11px;
+  font-size: 1.8rem;
+}
+
+.list-icons {
+  display: flex;
+  gap: 1.2rem;
+}
+.list-icon {
+  color: rgba(242, 95, 76, 1);
+}
+
+.priority {
+  background: rgba(248, 242, 244, 1);
+  padding: 5px;
+  border-radius: 5px 7px;
+  font-size: 1.2rem;
+  color: rgba(176, 114, 137, 1);
+  font-weight: 700;
+}
